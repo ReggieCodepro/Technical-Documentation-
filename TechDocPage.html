@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" type="text/css" href="Techdoc.css">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+        <nav id="navbar">
+            <header> HTML5 Documentation</header>
+            <ul>
+                <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+                <a class="nav-link" href="#HTML_Editors" rel="internal"><li>HTML Editors</li></a>
+                <a class="nav-link" href="#Basic" rel="internal"><li>Basic</li></a>
+                <a class="nav-link" href="#Elements" rel="internal"><li>Elements</li></a>
+                <a class="nav-link" href="#Attributes" rel="internal"><li>Attributes</li></a>
+                <a class="nav-link" href="#Headings" rel="internal"><li>Headings</li></a>
+                <a class="nav-link" href="#Paragraphs" rel="internal"><li>Paragraphs</li></a>
+                <a class="nav-link" href="#Comments" rel="internal"><li>Comments</li></a>
+                <a class="nav-link" href="#Links" rel="internal"><li>Links</li></a>
+                <a class="nav-link" href="#Formatting" rel="internal"><li>Formatting</li></a>
+                <a class="nav-link" href="#HTML_and_CSS" rel="internal"><li>HTML and CSS</li></a>
+            </ul>
+        </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    HTML is the standard languange for creating web pages. HTML stands for Hyper Text Markup languange.
+                    HTML describes the structure of Web pages using elements as building block for the page.
+                    HTML elements are represented by tags that label pieces of content of the page.
+                </p>
+
+                <img src="SimpleHTML.jpg" alt="Example of HTML Document">
+                <ul>
+                    <li>The &lt;!DOCTYPE html&gt; declaration defines this document to be HTML5 </li>
+                    <li>The &lt;html&gt; element is the root element of an HTML page</li>
+                    <li>The &lt;head&gt; element contains meta information about the document</li>
+                    <li>The &lt;title&gt; element specifies a title for document</li>
+                    <li>The &lt;body&gt element contains the visible page content</li>
+                    <li>The &lt;h1&gt; element defines a large heading</li>
+                    <li>The &lt;p&gt; element defines a paragraph</li>
+                </ul>
+                <h1>HTML Tags</h1>
+                <p> HTML tags are element names surrounded by angle brackets. </p>
+                <p>&lt;tagname&gt;content goes here...&lt;/tagname&gt;</p>
+                <ul>
+                    <li>HTML tags normarlly come in pairs like &lt;p&gt; and &lt;p&gt;</li>
+                    <li>The first tag in a pair is the start tag, the second tag is the end tag</li>
+                    <li>The end tag is written like te start tag, but with a forward slash inserted before the tag name</li>
+                </ul>
+
+            </article>
+        </section>
+        <section class="main-section" id="#HTML_Editors">
+            <header>HTML Editors</header>
+            <article>
+                <p>Web pages can be created and modified by HTML editors. 
+                    Learning HTML use simple text like Notepad. </p>
+                    <h2>Steps to create a HTML page</h2>
+                    <ol>
+                       <li>Step One: Open Notepad or any other editing software</li> 
+                       <li>Step two: Write some HTML Code</li>
+                       <p>Write or copy some HTML into Notepad</p>
+                       <img src="SimpleHTML.jpg" alt="Example of HTML Document">
+                       <li>Step three: Save the file on your computer. Select File > Save as in the the Notepad menu. 
+                           Name the file "index.html and set the encoding to UTF-8. See image for details</li>
+                           <img src="Notepad.jpg" alt="Example of Save as encoding UTF-8">
+                        <li>Step Four: Open the saved HTMl File in any browser. 
+                            Double clicking works too or just use the open file option.</li>
+                            <img src="NoteWeb.jpg" alt="Example of HTML Document in web browser">
+                    </ol>
+            </article>
+        </section>
+        <section class="main-section" id="Basic">
+        <header>Basic HTML Examples</header>
+        <article>
+        <p>All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;.</p>
+        <p>The HTML document itself begins with &lt;html&gt;and ends with &lt;/html&gt;.</p>
+        <p>The visible part of the HTML document is between &lt;body&gt;and &lt;/body&gt;.</p>
+        <img src="basicExample.jpg" alt="Example of HTML Document"> 
+        <h2>HTML Headings</h2>
+        <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.</p>
+        <p>&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading: </p>
+        <img src="BascHeading1.jpg" alt="Code Example of HTML Document with Headings"> 
+        <img src="BascHeading2.jpg" alt="Browser Example of HTML Document with Headings">
+        <h2>HTML Paragraphs</h2>
+        <p>HTML paragraphs are defined with the &lt;p&gt;</p>
+        <p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+        <p>&lt;p&gt;This is another paragraph.&lt;/p&gt;</p>
+        <h2>HTML Links</h2>
+        <p>HTML links are defined with the &lt;a&gt; </p>
+        <img src="LinksExample.jpg" alt="HTML link Example">
+        <p>The Link's destination is specified in the href attribute.</p>
+        <p>Attributes are used to provide additional infromation about the HTML elements</p>
+        <h2>HTML Images</h2>
+        <p>HTML images are defined with the &lt;img&gt; tag.</p>
+        <img src="ImageEx.jpg" alt="HTML image example">
+        <p>The source file (<code class="w3-codespan">src</code>) attribute identifies an image by a URL,
+             alternative text (<code class="w3-codespan">alt</code>) attribute specifies an alternate text for an image, 
+        <code class="w3-codespan">width</code>, and <code class="w3-codespan">height</code> will difined the size of the image.</p>
+<h2>HTML Buttons</h2>
+<p>HTML buttons are defined with the  &lt;button&gt;</p>
+<p>Example &lt;button&gt;click me&lt;/button&gt;  </p>
+<h2>HTML Lists</h2>
+<p>HTML lists are defined with the &lt;ul&gt;(<code class="w3-codespan">unordered/bullet list</code>)
+or the &lt;ol&gt;(<code class="w3-codespan">ordered/numbered list</code>)tag, followed by &lt;li&gt; tags
+ (<code class="w3-codespan"> list items</code>):  </p>
+ <h3>Example</h3>
+ <img src="Listsexample.jpg" alt="HTML image example">
+    </article>
+        </section>
+        <section class="main-section" id="Elements">
+            <header>HTML Elements</header>
+            <article>
+              <p>An HTML element usually consisits of a start tag and end tag, with the content inserted in between:</p>
+              <p>&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</p>
+              <p>The HTML element is everything from the start tag to the end tag:</p>
+              <p>&lt;p&gt;My first paragraph.&lt;/p&gt; </p>
+              <img src="elementsEX.jpg" alt="Example of where elements are in HTML code.">
+              <p>HTML elements with no content are called empty elemnets. Empty elements do not have an end tag, such as the &lt;br&gt; element (<code class="w3-codespan">which indicates a line break</code>).  </p>
+                <h2>Nested HTML Elements</h2>
+                <p>HTML elements can be nested (<code class="w3-codespan">elements can contain elements</code>).</p>
+                <p>All HTML documents consist of nested HTML elements.</p>
+                <P>This example contains four HTML elements:</P>
+                <img src="Nestedelements.jpg" alt="Example of Nested Elements">
+                <h3>Example Explained</h3>
+                <p>The &lt;html&gt; element defines the whole document.  </p>
+                <p>It has a start tag &lt;html&gt;and the end tag &lt;/html&gt; </p>
+                <img src="elementsEX2.jpg" alt="Example of HTML tag">
+                <p>It has a start tag &lt;body&gt;and the end tag &lt;/body&gt; </p>
+                <p>The element content is two other HTML elements (<code class="w3-codespan">&lt;h1&gt; and &lt;p&gt;</code>). </p>
+                <img src="elementsEX3.jpg" alt="Example of two HTML tags h1 and p ">
+                <p>The &lt;h1&gt; element defines a heading. </p>
+                <p>It has a start tag &lt;h1&gt;and the end tag &lt;/h1&gt; </p>
+                <p>The element content is: My First Heading. </p>
+                <p>&lt;p&gt;My first paragraph.&lt;/p&gt;</p>
+                <h2>Do Not Forget the End Tag</h2>
+                <p>Some HTML elements will display correctly, even if you forget the end tag:</p>
+                <img src="elementsEX4.jpg" alt="Correctly formatted HTML document">
+                <p>The example above works in all browsers, because the closing tag is considered optional.</p>
+                <h2>Empty HTML Elements</h2>
+                <p>HTML elements with no content are called empty elements.</p>
+                <p>&lt;br&gt; is an empty element without a closing tag (<code class="w3-codespan">the &lt;br&gt; tag difines a line break</code>). </p>
+                <p>Empty elements can be "closed" in the opening tag like this: &lt;br/&gt;. </p>
+                <p>HTML5 does not require empty elements to be closed. But if you want stricter validation, 
+                    or if you need to make your document readable by the XML parsers, you must close all HTML elements properly.</p>
+                    <h2>Use Lowercase Tags </h2>
+                    <p>HTML tags are not case sensitive: &lt;P&gt; means the same as &lt;p&gt;</p>
+                    <p>The HTML5 standard does not repuire lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Attributes">
+            <header>HTML Attributes</header>
+            <article>
+                <p>Attributes provide additional information about HTML elements.</p>
+                <h2>HTML Attributes</h2>
+                <ul>
+                    <li>All HTML elements can have attributes.</li>
+                    <li>Attributes provide additional information about an element</li>
+                    <li>Attributes are always specified in the start tag</li>
+                    <li>Attributes usually come in name/value pairs like: name="value"</li>
+                </ul>
+                <h2>The href Attribute</h2>
+                <p>HTML links are defined with the &lt;a&gt; tag. The link address is specified in the href attribute:</p>
+                    <img src="attributes1.jpg" alt="HTML link with a tag and href">   
+                <h2>The src Attribute</h2>
+                <p>HTML images are defined with the &lt;img&gt; tag.</p>
+                <p>The filename of the image source is specified in the src attribute:</p>
+                <img src="srcEX.jpg" alt="image tag with src">  
+                <h2>The width and height attributes</h2>
+                <p>Images in HTML have a set of size attributes, which specifies the width and height of the image:</p>
+                <img src="widthandHeight.jpg" alt="image tag with width and height attributes">  
+                <p>The image size is specified in pixels: width="500" means 500 pixels wide.</p>
+                <h2>The alt Attribute</h2>
+                <p>The alt attribute specifies an alternative text to be used, when an image cannot be displayed.</p>
+                <p>The value of the attribute can be read by screen readers. This way, someone "listening" to the webpage,
+                     e.g. a vision impaired person, can "hear" the element.</p>
+                     <img src="altAttributeEX.jpg" alt="Alt attribute example">  
+                     <p> alt attribute is also useful if the image does not exist: </p> 
+                     <img src="noImageEx.jpg" alt="Display of alt with no image">  
+                <p>If we try to display an image that does not exist, 
+                    the value of the alt attribute will be displayed instead.</p>
+                    <h2>The style Attribute</h2>
+                    <p>The style attribute is used to specify the styling of an element, like color, font, size etc.</p>
+                    <img src="styleEx.jpg" alt="style attribute example">
+                    <h2>The lang Attribute</h2>
+                    <p>The language of the document can be declared in the &lt;html&gt; tag.</p>
+                    <p>The language is declared with the lang attribute.</p>
+                    <p>Declaring a language is important for accessibility applications
+                            (<code class="w3-codespan">screen readers</code>) and search engines:</p>
+                    <img src="LangattrubEX.jpg" alt="Lang attribute example">
+                <p>The first two letters specify the language (<code class="w3-codespan">en</code>). If there is a dialect,
+                     use two more letters (<code class="w3-codespan">US</code>).</p>    
+        <h2>The title Attribute</h2>
+        <p>Here, a title attribute is added to the <code class="w3-codespan">&lt;p&gt;</code> element. 
+            The value of the title attribute will be displayed as a tooltip when you mouse over the paragraph:</p>
+            <img src="titleEX.jpg" alt="title attribute in a paragraph">
+        <h2>We Suggest: Use Lowercase Attributes </h2>
+        <p>The HTML5 standard does not require lowercase attribute names.</p>
+        <p>The title attribute can be written with uppercase or lowercase like title or TITLE.</p>
+
+
+            </article>
+</html>
